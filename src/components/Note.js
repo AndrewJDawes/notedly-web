@@ -34,7 +34,7 @@ const UserActions = styled.div`
 const Note = ({ note }) => {
   const { loading, error, data } = useQuery(IS_LOGGED_IN);
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error!</p>;
+  if (error) return <p>Note error!</p>;
 
   return (
     <StyledNote>

@@ -18,6 +18,8 @@ const Home = () => {
   // if there is an error fetching the data, display an error
   if (error) return <p>Error!</p>;
 
+  // if there are no notes, return a message
+  if (!data.noteFeed.notes.length > 0) return <p>No notes yet!</p>;
   // if the data is successful, display the data in our UI
   return (
     // add a <React.Fragment> element to provide a parent element
